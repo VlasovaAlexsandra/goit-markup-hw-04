@@ -241,6 +241,14 @@ img {
     margin-right: 30px;
 }
 
+.list .comands {    
+    background-color: var(--header-bg-color);
+    max-width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);    
+}
 
 .list-title {
     margin-top: 0px;
@@ -327,6 +335,16 @@ img {
     margin-right: 0px;
 }
 
+.list-projects .project-item {
+    max-width: 370px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.list-projects .project-item:hover {    
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-text {
     color: var(--primary-text-color);
 
@@ -384,8 +402,8 @@ img {
 .btn .button.primary:hover,
 .btn .button.primary:focus {
     background-color: var(--accent-text-color);
-    color: #FFFFFF;    
-     
+    color: #FFFFFF;  
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);    
 }
 
 /* footer */
