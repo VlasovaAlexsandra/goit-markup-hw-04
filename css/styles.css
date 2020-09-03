@@ -326,8 +326,44 @@ img {
 
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
 
+}
+
+/* Постоянные клиенты */
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;    
+}
+
+.list .client-item:not(:last-child) {
+    margin-right: 30px;    
+}
+
+.list .client-item {         
+    width: 170px;
+    height: 90px;         
+    background-color: #E5E5E5;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    
+
+   /* outline: 1px solid greenyellow; */
+}
+
+.client-item .client-icon {    
+    fill: #afb1b8;
+    align-items: center;
+}
+
+.list .client-item:hover {
+    border: 1px solid var(--accent-text-color);
+}
+
+.client-icon:hover {
+    fill: var(--accent-text-color);    
 }
 
 .section-price {
