@@ -25,6 +25,26 @@ html {
     --bgr-footer: #2F303A;
 }
 
+
+li :last-child {
+    margin-right: 0;      
+}
+/* 
+img {
+    /* display: inline-block; */
+    /* margin-right: 30px;   
+} */ 
+
+img:not(last-child) {
+    margin-right: 30px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* header */
 .page-header {
     background-color: var(--header-bg-color);
@@ -137,23 +157,21 @@ html {
     letter-spacing: 0.02em; 
 }
 
-/* .hover-icon:hover {
-    color: var(--accent-text-color);
+.contact-icon-link:hover .contact-icon,
+.contact-icon-link:focus .contact-icon {
     fill: var(--accent-text-color);
-} */
+}
 
 .contacts .link:hover,
 .contacts .link:focus {
     color: var(--accent-text-color);    
 }
 
-.contact-icon {
+.icon-container .contact-icon {    
+    margin-right: 10px;
     fill: #757575;
 }
 
-.contact-icon:hover {
-    fill: var(--accent-text-color);
-}
 
 /* hero */
 .hero-title {
@@ -260,24 +278,6 @@ html {
 /* .staff {
     background-color: var(--staff-bg-color); */
 
-li :last-child {
-    margin-right: 0;      
-}
-/* 
-img {
-    /* display: inline-block; */
-    /* margin-right: 30px;   
-} */ */
-
-img:not(last-child) {
-    margin-right: 30px;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 .content-box:not(:last-child) {
     margin-right: 30px;
