@@ -212,6 +212,36 @@ html {
 .prioritet {
     max-width: 270px;
     flex-grow: 1;
+    /* height: 120px; */
+}
+
+.list .prioritet::before {
+    display: block;
+    content: "";    
+    height: 120px;
+    /* outline: 1px solid green; */
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;   
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/icons/i-antenna.svg);    
+}
+
+.icon-clock::before {
+    background-image: url(../images/icons/i-clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/icons/i-diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/icons/i-astronaut.svg);
 }
 
 /* .staff {
