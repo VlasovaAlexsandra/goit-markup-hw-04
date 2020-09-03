@@ -137,9 +137,22 @@ html {
     letter-spacing: 0.02em; 
 }
 
+/* .hover-icon:hover {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+} */
+
 .contacts .link:hover,
 .contacts .link:focus {
     color: var(--accent-text-color);    
+}
+
+.contact-icon {
+    fill: #757575;
+}
+
+.contact-icon:hover {
+    fill: var(--accent-text-color);
 }
 
 /* hero */
@@ -303,6 +316,39 @@ img {
     letter-spacing: 0.03em; 
 }
 
+.social-icon-list {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    fill: #afb1b8;
+}
+
+.social-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.social-icon-link:hover, 
+.social-icon-link:focus {
+    background-color: var(--accent-text-color);
+}
+
+.social-icon-link:hover .social-icon, 
+.social-icon-link:focus .social-icon {
+    fill: var(--footer-text-color);    
+}
+
 .projects-title {
     color: var(--title-text-color);
     
@@ -347,10 +393,7 @@ img {
     height: 90px;         
     background-color: #E5E5E5;
     border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    
-
-   /* outline: 1px solid greenyellow; */
+    border-radius: 4px;    
 }
 
 .client-item .client-icon {    
@@ -358,12 +401,13 @@ img {
     align-items: center;
 }
 
-.list .client-item:hover {
+.list .client-item:hover,
+.list .client-item:focus {
     border: 1px solid var(--accent-text-color);
 }
 
-.client-icon:hover {
-    fill: var(--accent-text-color);    
+.list .client-item:hover .client-icon {   
+    fill: var(--accent-text-color);
 }
 
 .section-price {
